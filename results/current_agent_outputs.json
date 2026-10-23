@@ -1,0 +1,148 @@
+{
+  "calls": [
+    {
+      "stage": "current_planning",
+      "role": "Verification planning",
+      "provider": "ollama",
+      "model": "qwen3:1.7b",
+      "llm_called": true,
+      "prompt_tokens": 1050,
+      "output_tokens": 116,
+      "started_at_utc": "2026-10-21T15:28:16.672035+00:00",
+      "completed_at_utc": "2026-10-21T15:29:16.703251+00:00",
+      "output": {
+        "rationale": "The plan focuses on verifying the frozen single-fold source result and its limitations. The evidence includes validation metrics, model parameters, and comparison data between standard and generic controls. The goal is to assess the model's performance and identify potential limitations in the current setup.",
+        "checks": [
+          "Evaluate model architecture and parameters",
+          "Compare standard vs. generic performance",
+          "Assess limitations of the source-participant validation fold",
+          "Verify evidence integrity and scope"
+        ],
+        "evidence_ids": [
+          "evaluation_limits",
+          "model_protocol",
+          "source_comparison"
+        ]
+      },
+      "receipt_sha256": "6094a07a15e30e5acdd140a8d6b185d87af5749f6a341ca506e7c95f16e5ab8f",
+      "check": "This actual planning call proposed checks of existing evidence, not the original training experiment. Fixed Python validation steps remain authoritative; the LLM does not execute arbitrary actions."
+    },
+    {
+      "stage": "current_reporting",
+      "role": "Verified evidence report",
+      "provider": "ollama",
+      "model": "qwen3:1.7b",
+      "llm_called": true,
+      "prompt_tokens": 1313,
+      "output_tokens": 240,
+      "started_at_utc": "2026-10-21T15:29:17.009008+00:00",
+      "completed_at_utc": "2026-10-21T15:30:56.892028+00:00",
+      "output": {
+        "title": "ReportReply",
+        "findings": [
+          "The model protocol demonstrates a signed temporal-energy key bias architecture with 60 training participants and 31 validation participants, using a seed of 42 and 4920 parameters.",
+          "The source_comparison evidence shows that the innovation model outperforms the standard and generic models, with an accuracy of 0.8953405 for innovation and 0.8924731 for standard and generic.",
+          "The evaluation_limits evidence indicates that this is the first source-participant validation fold, not an independent test or full cross-validation result."
+        ],
+        "limitations": [
+          "The results are limited to the first source-participant validation fold and do not include full cross-validation or independent testing.",
+          "The model is a frozen single-fold signed temporal-energy Transformer prototype with matched standard and generic controls.",
+          "No new development or independent test was performed.",
+          "The results do not claim to improve EEG accuracy."
+        ],
+        "evidence_ids": [
+          "evaluation_limits",
+          "model_protocol",
+          "source_comparison"
+        ]
+      },
+      "receipt_sha256": "4da4e5d3f94e119e488b8d0ed62dc40a2d84c84410b1d78630cef637f626093f",
+      "check": "Python confirms 1249/1395 proposed and 1245/1395 for both controls, on one source-validation fold. The last limitation is ambiguous: no LLM accuracy benefit was tested; the proposed EEG attention has an observed +0.2867-point fold difference. Outperformance is limited to this selected fold."
+    }
+  ],
+  "scope": "Actual local-LLM verification planning and reporting; saved source predictions only.",
+  "workflow": {
+    "scope": "Saved source-fold prediction verification; no new EEG inference, training or independent test.",
+    "trace": [
+      {
+        "stage": "planning",
+        "status": "completed",
+        "completed_at_utc": "2026-10-21T15:29:16.721074+00:00",
+        "detail": "Retrieved three local evidence documents; actual Ollama planning call completed."
+      },
+      {
+        "stage": "validation",
+        "status": "completed",
+        "completed_at_utc": "2026-10-21T15:29:16.799121+00:00",
+        "detail": "Validated 10 file hashes and retrieved evidence freshness."
+      },
+      {
+        "stage": "execution",
+        "status": "completed",
+        "completed_at_utc": "2026-10-21T15:29:16.987066+00:00",
+        "detail": "Python recomputed counts and accuracies from 4,185 saved trial predictions."
+      },
+      {
+        "stage": "verification",
+        "status": "completed",
+        "completed_at_utc": "2026-10-21T15:29:16.995133+00:00",
+        "detail": "Reconciled all three comparisons; confirmed one-fold scope and no independent test."
+      },
+      {
+        "stage": "reporting",
+        "status": "completed",
+        "completed_at_utc": "2026-10-21T15:30:56.903075+00:00",
+        "detail": "Actual Ollama report call completed; original prose is unverified commentary."
+      }
+    ],
+    "evidence": [
+      {
+        "id": "evaluation_limits",
+        "source": "results/current_source_results.json",
+        "text": "{\"scope\": \"First source-participant validation fold; selected from this fold. Not an independent test or full cross-validation result.\", \"full_cross_validation_completed\": false, \"development_evaluation_performed\": false, \"independent_final_test\": false, \"labeled_calibration\": false}",
+        "retrieval_score": 2,
+        "source_sha256": "37d4dd0957074f32ed0c347b1aefab074f778117d572623d41f0cac8d1044426"
+      },
+      {
+        "id": "model_protocol",
+        "source": "results/current_source_results.json",
+        "text": "{\"architecture\": \"Signed temporal-energy key bias\", \"training_participants\": 60, \"validation_participants\": 31, \"seed\": 42, \"parameters\": 4920, \"pretraining_epochs\": 40, \"finetuning_epochs\": 20, \"temperature\": 2, \"scope\": \"First source-participant validation fold; selected from this fold. Not an independent test or full cross-validation result.\", \"configurations_per_family\": 3, \"epoch_grid\": [20, 40, 60]}",
+        "retrieval_score": 2,
+        "source_sha256": "37d4dd0957074f32ed0c347b1aefab074f778117d572623d41f0cac8d1044426"
+      },
+      {
+        "id": "source_comparison",
+        "source": "results/current_source_results.json",
+        "text": "{\"standard\": {\"correct\": 1245, \"trials\": 1395, \"accuracy\": 0.8924731182795699, \"participant_loss\": 0.2693539559841156}, \"generic\": {\"correct\": 1245, \"trials\": 1395, \"accuracy\": 0.8924731182795699, \"participant_loss\": 0.2683614492416382}, \"innovation\": {\"correct\": 1249, \"trials\": 1395, \"accuracy\": 0.8953405017921147, \"participant_loss\": 0.27197402715682983}}",
+        "retrieval_score": 1,
+        "source_sha256": "37d4dd0957074f32ed0c347b1aefab074f778117d572623d41f0cac8d1044426"
+      }
+    ],
+    "numeric_verification": {
+      "scores": {
+        "innovation": {
+          "correct": 1249,
+          "trials": 1395,
+          "accuracy": 0.8953405017921147,
+          "participants": 31
+        },
+        "standard": {
+          "correct": 1245,
+          "trials": 1395,
+          "accuracy": 0.8924731182795699,
+          "participants": 31
+        },
+        "generic": {
+          "correct": 1245,
+          "trials": 1395,
+          "accuracy": 0.8924731182795699,
+          "participants": 31
+        }
+      },
+      "gain_percentage_points": 0.28673835125447855,
+      "scope": "Saved source-fold prediction verification; no new EEG inference, training or independent test."
+    },
+    "commentary_verified": false,
+    "retrieval_method": "Deterministic keyword ranking of three local protocol, comparison and evaluation-limit records; no vector database or external retrieval."
+  }
+}

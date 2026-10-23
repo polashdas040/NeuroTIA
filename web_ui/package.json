@@ -1,0 +1,8 @@
+{
+  "name": "neurotia-interface",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Local interface for the frozen NeuroTIA EEG classifier",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}

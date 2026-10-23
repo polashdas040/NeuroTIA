@@ -1,0 +1,13 @@
+{
+  "format": "true vector SVG and PDF",
+  "raster_image_elements": 0,
+  "svg_elements": {
+    "path": 344,
+    "text": 152,
+    "image": 0
+  },
+  "source": "figures/draw_current_architecture.py",
+  "scope": "Verified 41/42/43 source-fold ensemble",
+  "figure_source": "Matplotlib vector primitives",
+  "svg_sha256": "872d70ea9498b0bf859e2f231586721c625fa4f1579e4349dc6ad072c0fdd4f2"
+}

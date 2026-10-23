@@ -1,0 +1,29 @@
+# Publish only the runnable project, frozen evidence and documentation.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/requirements.txt
+!/model/
+!/agent/
+!/results/
+!/figures/
+!/web_ui/
+!/docs/
+**/__pycache__/
+**/*.pyc
+**/.cache/
+figures/*_preview.png
+.env
+.env.*
+
+# Never upload downloaded or prepared EEG datasets.
+*.edf
+*.edf.event
+*.bdf
+*.npy
+**/data/
+**/raw/
+
+# Per-trial prediction/data archives remain private.
+*.npz

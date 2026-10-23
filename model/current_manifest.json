@@ -1,0 +1,181 @@
+{
+  "status": "Three-seed source-validation ensemble",
+  "class": "model.current_architecture.SignedKeyTransformer",
+  "members": {
+    "standard": {
+      "path": "model/current_weights/standard_fold0_seed42.pt",
+      "sha256": "593fa9e08489941ac483176530e50eac991d8001139f725bcca2df3e99e579e6",
+      "config": {
+        "id": 2,
+        "temperature": 2.0,
+        "prior_init": 1
+      },
+      "epoch": 20,
+      "seed": 42,
+      "fold": 0
+    },
+    "generic": {
+      "path": "model/current_weights/generic_fold0_seed42.pt",
+      "sha256": "665005bace84469533663f4385b52f7e4ad4e6b8a489254fa1ff136434dd643f",
+      "config": {
+        "id": 2,
+        "temperature": 2.0,
+        "prior_init": 1
+      },
+      "epoch": 20,
+      "seed": 42,
+      "fold": 0
+    },
+    "innovation": {
+      "path": "model/current_weights/innovation_fold0_seed42.pt",
+      "sha256": "1d5599cd716cf0d15a1218b791bda4a919e8a33205aa1f84c1411cd84202956d",
+      "config": {
+        "id": 0,
+        "temperature": 2.0,
+        "prior_init": -1
+      },
+      "epoch": 20,
+      "seed": 42,
+      "fold": 0
+    }
+  },
+  "architecture_sha256": "2e34ed49e8fed62977e1005384a8c1a9548e09ed767cdf175a1253135b60e7cd",
+  "base_architecture_sha256": "92664e9eac88ba3cf0bdc4a03e439bffb6304f31a18effd8c20b8b24e8f92099",
+  "artifacts_sha256": {
+    "results/current_source_results.json": "ac2231a5ecbc81889ada57be8d8855d44c98b938de3af42245508abfb6227f7d",
+    "results/current_agent_outputs.json": "17aa6eee9df90cc620482c6adcd8ac44fe0f82167b512fa1c214e45e9f89567b",
+    "results/dashboard_results.json": "81786a503f8473ca4928f19d625f63466b80c1bd4a50d927c6532f4713d3ac91",
+    "results/training_history.json": "f74867519d9bfe0b875b60373f198a4423e76d8995eb381e092cf9feac382ff8"
+  },
+  "predictor_sha256": "f206af16cad08ea662ff03b40b1e968934cffc45aecc4ec49339bcbf2b95b401",
+  "verification": {
+    "exported_source_probabilities_replayed_exactly": true,
+    "member_trial_predictions": 12555,
+    "members": 9,
+    "scope": "Aligned source EEG replay; no independent test."
+  },
+  "requested_ensemble_seeds": [
+    41,
+    42,
+    43
+  ],
+  "requested_ensemble_status": "Completed",
+  "ensemble_members": {
+    "standard": [
+      {
+        "seed": 41,
+        "path": "model/current_weights/standard_fold0_seed41.pt",
+        "sha256": "f32370450320db47d5e6e63b42a4e7f8940878884f7cc88792f19ed550664a91",
+        "config": {
+          "id": 2,
+          "temperature": 2.0,
+          "prior_init": 1
+        },
+        "epoch": 20,
+        "protocol_lineage": "user_seed_revision"
+      },
+      {
+        "seed": 42,
+        "path": "model/current_weights/standard_fold0_seed42.pt",
+        "sha256": "593fa9e08489941ac483176530e50eac991d8001139f725bcca2df3e99e579e6",
+        "config": {
+          "id": 2,
+          "temperature": 2.0,
+          "prior_init": 1
+        },
+        "epoch": 20,
+        "protocol_lineage": "original_signed_key"
+      },
+      {
+        "seed": 43,
+        "path": "model/current_weights/standard_fold0_seed43.pt",
+        "sha256": "c9880a23bfff835a6b41f7e96fa506e2ab838c4fdb585096329ea5e288e7db48",
+        "config": {
+          "id": 2,
+          "temperature": 2.0,
+          "prior_init": 1
+        },
+        "epoch": 20,
+        "protocol_lineage": "user_seed_revision"
+      }
+    ],
+    "generic": [
+      {
+        "seed": 41,
+        "path": "model/current_weights/generic_fold0_seed41.pt",
+        "sha256": "87b2f53dbb7c3f893140b520d5645b7cb0802f36d2d6aae6edf6cf6183ed33b1",
+        "config": {
+          "id": 2,
+          "temperature": 2.0,
+          "prior_init": 1
+        },
+        "epoch": 20,
+        "protocol_lineage": "user_seed_revision"
+      },
+      {
+        "seed": 42,
+        "path": "model/current_weights/generic_fold0_seed42.pt",
+        "sha256": "665005bace84469533663f4385b52f7e4ad4e6b8a489254fa1ff136434dd643f",
+        "config": {
+          "id": 2,
+          "temperature": 2.0,
+          "prior_init": 1
+        },
+        "epoch": 20,
+        "protocol_lineage": "original_signed_key"
+      },
+      {
+        "seed": 43,
+        "path": "model/current_weights/generic_fold0_seed43.pt",
+        "sha256": "1d7acf2bbc541ab13f5b01097d28bbf9c5f95fbf836e1700535ca8d7390419d2",
+        "config": {
+          "id": 2,
+          "temperature": 2.0,
+          "prior_init": 1
+        },
+        "epoch": 20,
+        "protocol_lineage": "user_seed_revision"
+      }
+    ],
+    "innovation": [
+      {
+        "seed": 41,
+        "path": "model/current_weights/innovation_fold0_seed41.pt",
+        "sha256": "a94eb0822bf5ac194dec62f580e659bbcea16d4e6b1c7b83e512719a50b61025",
+        "config": {
+          "id": 0,
+          "temperature": 2.0,
+          "prior_init": -1
+        },
+        "epoch": 20,
+        "protocol_lineage": "user_seed_revision"
+      },
+      {
+        "seed": 42,
+        "path": "model/current_weights/innovation_fold0_seed42.pt",
+        "sha256": "1d5599cd716cf0d15a1218b791bda4a919e8a33205aa1f84c1411cd84202956d",
+        "config": {
+          "id": 0,
+          "temperature": 2.0,
+          "prior_init": -1
+        },
+        "epoch": 20,
+        "protocol_lineage": "original_signed_key"
+      },
+      {
+        "seed": 43,
+        "path": "model/current_weights/innovation_fold0_seed43.pt",
+        "sha256": "1fde8ac884606cf2c3eb8247534386c9fab30cbade79076b0b8240d4c19df537",
+        "config": {
+          "id": 0,
+          "temperature": 2.0,
+          "prior_init": -1
+        },
+        "epoch": 20,
+        "protocol_lineage": "user_seed_revision"
+      }
+    ]
+  },
+  "shared_predictor_sha256": "4e3fae3ec176920e2ae8af98e4628d3a7fc993f043edd871f2a8e75cd9624692",
+  "public_verification_scope": "Checkpoint integrity and aggregate confusion/participant count reconciliation. Per-trial archives are not distributed."
+}

@@ -1,0 +1,1131 @@
+{
+  "name": "NeuroTIA Transformer",
+  "variant": "Signed temporal-energy key bias",
+  "status": "Three-seed source-fold ensemble",
+  "scope": "First source-participant validation fold; settings previously selected with seed42; not independent testing or full cross-validation.",
+  "metrics": {
+    "standard": {
+      "config": {
+        "id": 2,
+        "temperature": 2.0,
+        "prior_init": 1
+      },
+      "config_index": 2,
+      "epoch": 20,
+      "accuracy": 0.8960573476702509,
+      "correct": 1250,
+      "trials": 1395,
+      "participant_loss": 0.26527225971221924,
+      "folds": [
+        {
+          "accuracy": 0.8960573476702509,
+          "correct": 1250,
+          "trials": 1395,
+          "participant_loss": 0.26527225971221924
+        }
+      ],
+      "auroc": 0.9623907904203927,
+      "confusion_matrix": [
+        [
+          633,
+          72
+        ],
+        [
+          73,
+          617
+        ]
+      ],
+      "participants": [
+        {
+          "id": "S001",
+          "correct": 43,
+          "trials": 45,
+          "accuracy": 0.9555555555555556
+        },
+        {
+          "id": "S002",
+          "correct": 41,
+          "trials": 45,
+          "accuracy": 0.9111111111111111
+        },
+        {
+          "id": "S003",
+          "correct": 42,
+          "trials": 45,
+          "accuracy": 0.9333333333333333
+        },
+        {
+          "id": "S004",
+          "correct": 43,
+          "trials": 45,
+          "accuracy": 0.9555555555555556
+        },
+        {
+          "id": "S005",
+          "correct": 33,
+          "trials": 45,
+          "accuracy": 0.7333333333333333
+        },
+        {
+          "id": "S006",
+          "correct": 42,
+          "trials": 45,
+          "accuracy": 0.9333333333333333
+        },
+        {
+          "id": "S007",
+          "correct": 45,
+          "trials": 45,
+          "accuracy": 1.0
+        },
+        {
+          "id": "S008",
+          "correct": 40,
+          "trials": 45,
+          "accuracy": 0.8888888888888888
+        },
+        {
+          "id": "S009",
+          "correct": 38,
+          "trials": 45,
+          "accuracy": 0.8444444444444444
+        },
+        {
+          "id": "S010",
+          "correct": 43,
+          "trials": 45,
+          "accuracy": 0.9555555555555556
+        },
+        {
+          "id": "S011",
+          "correct": 39,
+          "trials": 45,
+          "accuracy": 0.8666666666666667
+        },
+        {
+          "id": "S012",
+          "correct": 41,
+          "trials": 45,
+          "accuracy": 0.9111111111111111
+        },
+        {
+          "id": "S013",
+          "correct": 42,
+          "trials": 45,
+          "accuracy": 0.9333333333333333
+        },
+        {
+          "id": "S014",
+          "correct": 39,
+          "trials": 45,
+          "accuracy": 0.8666666666666667
+        },
+        {
+          "id": "S015",
+          "correct": 45,
+          "trials": 45,
+          "accuracy": 1.0
+        },
+        {
+          "id": "S016",
+          "correct": 38,
+          "trials": 45,
+          "accuracy": 0.8444444444444444
+        },
+        {
+          "id": "S017",
+          "correct": 41,
+          "trials": 45,
+          "accuracy": 0.9111111111111111
+        },
+        {
+          "id": "S018",
+          "correct": 43,
+          "trials": 45,
+          "accuracy": 0.9555555555555556
+        },
+        {
+          "id": "S019",
+          "correct": 38,
+          "trials": 45,
+          "accuracy": 0.8444444444444444
+        },
+        {
+          "id": "S020",
+          "correct": 43,
+          "trials": 45,
+          "accuracy": 0.9555555555555556
+        },
+        {
+          "id": "S021",
+          "correct": 33,
+          "trials": 45,
+          "accuracy": 0.7333333333333333
+        },
+        {
+          "id": "S022",
+          "correct": 44,
+          "trials": 45,
+          "accuracy": 0.9777777777777777
+        },
+        {
+          "id": "S023",
+          "correct": 43,
+          "trials": 45,
+          "accuracy": 0.9555555555555556
+        },
+        {
+          "id": "S024",
+          "correct": 36,
+          "trials": 45,
+          "accuracy": 0.8
+        },
+        {
+          "id": "S025",
+          "correct": 37,
+          "trials": 45,
+          "accuracy": 0.8222222222222222
+        },
+        {
+          "id": "S026",
+          "correct": 42,
+          "trials": 45,
+          "accuracy": 0.9333333333333333
+        },
+        {
+          "id": "S027",
+          "correct": 35,
+          "trials": 45,
+          "accuracy": 0.7777777777777778
+        },
+        {
+          "id": "S028",
+          "correct": 35,
+          "trials": 45,
+          "accuracy": 0.7777777777777778
+        },
+        {
+          "id": "S029",
+          "correct": 44,
+          "trials": 45,
+          "accuracy": 0.9777777777777777
+        },
+        {
+          "id": "S030",
+          "correct": 41,
+          "trials": 45,
+          "accuracy": 0.9111111111111111
+        },
+        {
+          "id": "S031",
+          "correct": 41,
+          "trials": 45,
+          "accuracy": 0.9111111111111111
+        }
+      ]
+    },
+    "generic": {
+      "config": {
+        "id": 2,
+        "temperature": 2.0,
+        "prior_init": 1
+      },
+      "config_index": 2,
+      "epoch": 20,
+      "accuracy": 0.8953405017921147,
+      "correct": 1249,
+      "trials": 1395,
+      "participant_loss": 0.26493436098098755,
+      "folds": [
+        {
+          "accuracy": 0.8953405017921147,
+          "correct": 1249,
+          "trials": 1395,
+          "participant_loss": 0.26493436098098755
+        }
+      ],
+      "auroc": 0.9629643334361189,
+      "confusion_matrix": [
+        [
+          630,
+          75
+        ],
+        [
+          71,
+          619
+        ]
+      ],
+      "participants": [
+        {
+          "id": "S001",
+          "correct": 43,
+          "trials": 45,
+          "accuracy": 0.9555555555555556
+        },
+        {
+          "id": "S002",
+          "correct": 41,
+          "trials": 45,
+          "accuracy": 0.9111111111111111
+        },
+        {
+          "id": "S003",
+          "correct": 42,
+          "trials": 45,
+          "accuracy": 0.9333333333333333
+        },
+        {
+          "id": "S004",
+          "correct": 42,
+          "trials": 45,
+          "accuracy": 0.9333333333333333
+        },
+        {
+          "id": "S005",
+          "correct": 33,
+          "trials": 45,
+          "accuracy": 0.7333333333333333
+        },
+        {
+          "id": "S006",
+          "correct": 42,
+          "trials": 45,
+          "accuracy": 0.9333333333333333
+        },
+        {
+          "id": "S007",
+          "correct": 45,
+          "trials": 45,
+          "accuracy": 1.0
+        },
+        {
+          "id": "S008",
+          "correct": 39,
+          "trials": 45,
+          "accuracy": 0.8666666666666667
+        },
+        {
+          "id": "S009",
+          "correct": 38,
+          "trials": 45,
+          "accuracy": 0.8444444444444444
+        },
+        {
+          "id": "S010",
+          "correct": 43,
+          "trials": 45,
+          "accuracy": 0.9555555555555556
+        },
+        {
+          "id": "S011",
+          "correct": 39,
+          "trials": 45,
+          "accuracy": 0.8666666666666667
+        },
+        {
+          "id": "S012",
+          "correct": 41,
+          "trials": 45,
+          "accuracy": 0.9111111111111111
+        },
+        {
+          "id": "S013",
+          "correct": 42,
+          "trials": 45,
+          "accuracy": 0.9333333333333333
+        },
+        {
+          "id": "S014",
+          "correct": 39,
+          "trials": 45,
+          "accuracy": 0.8666666666666667
+        },
+        {
+          "id": "S015",
+          "correct": 45,
+          "trials": 45,
+          "accuracy": 1.0
+        },
+        {
+          "id": "S016",
+          "correct": 38,
+          "trials": 45,
+          "accuracy": 0.8444444444444444
+        },
+        {
+          "id": "S017",
+          "correct": 41,
+          "trials": 45,
+          "accuracy": 0.9111111111111111
+        },
+        {
+          "id": "S018",
+          "correct": 44,
+          "trials": 45,
+          "accuracy": 0.9777777777777777
+        },
+        {
+          "id": "S019",
+          "correct": 38,
+          "trials": 45,
+          "accuracy": 0.8444444444444444
+        },
+        {
+          "id": "S020",
+          "correct": 42,
+          "trials": 45,
+          "accuracy": 0.9333333333333333
+        },
+        {
+          "id": "S021",
+          "correct": 33,
+          "trials": 45,
+          "accuracy": 0.7333333333333333
+        },
+        {
+          "id": "S022",
+          "correct": 44,
+          "trials": 45,
+          "accuracy": 0.9777777777777777
+        },
+        {
+          "id": "S023",
+          "correct": 43,
+          "trials": 45,
+          "accuracy": 0.9555555555555556
+        },
+        {
+          "id": "S024",
+          "correct": 37,
+          "trials": 45,
+          "accuracy": 0.8222222222222222
+        },
+        {
+          "id": "S025",
+          "correct": 36,
+          "trials": 45,
+          "accuracy": 0.8
+        },
+        {
+          "id": "S026",
+          "correct": 42,
+          "trials": 45,
+          "accuracy": 0.9333333333333333
+        },
+        {
+          "id": "S027",
+          "correct": 35,
+          "trials": 45,
+          "accuracy": 0.7777777777777778
+        },
+        {
+          "id": "S028",
+          "correct": 36,
+          "trials": 45,
+          "accuracy": 0.8
+        },
+        {
+          "id": "S029",
+          "correct": 44,
+          "trials": 45,
+          "accuracy": 0.9777777777777777
+        },
+        {
+          "id": "S030",
+          "correct": 41,
+          "trials": 45,
+          "accuracy": 0.9111111111111111
+        },
+        {
+          "id": "S031",
+          "correct": 41,
+          "trials": 45,
+          "accuracy": 0.9111111111111111
+        }
+      ]
+    },
+    "innovation": {
+      "config": {
+        "id": 0,
+        "temperature": 2.0,
+        "prior_init": -1
+      },
+      "config_index": 0,
+      "epoch": 20,
+      "accuracy": 0.8931899641577061,
+      "correct": 1246,
+      "trials": 1395,
+      "participant_loss": 0.266245037317276,
+      "folds": [
+        {
+          "accuracy": 0.8931899641577061,
+          "correct": 1246,
+          "trials": 1395,
+          "participant_loss": 0.266245037317276
+        }
+      ],
+      "auroc": 0.9619529242470963,
+      "confusion_matrix": [
+        [
+          631,
+          74
+        ],
+        [
+          75,
+          615
+        ]
+      ],
+      "participants": [
+        {
+          "id": "S001",
+          "correct": 43,
+          "trials": 45,
+          "accuracy": 0.9555555555555556
+        },
+        {
+          "id": "S002",
+          "correct": 41,
+          "trials": 45,
+          "accuracy": 0.9111111111111111
+        },
+        {
+          "id": "S003",
+          "correct": 42,
+          "trials": 45,
+          "accuracy": 0.9333333333333333
+        },
+        {
+          "id": "S004",
+          "correct": 43,
+          "trials": 45,
+          "accuracy": 0.9555555555555556
+        },
+        {
+          "id": "S005",
+          "correct": 33,
+          "trials": 45,
+          "accuracy": 0.7333333333333333
+        },
+        {
+          "id": "S006",
+          "correct": 41,
+          "trials": 45,
+          "accuracy": 0.9111111111111111
+        },
+        {
+          "id": "S007",
+          "correct": 45,
+          "trials": 45,
+          "accuracy": 1.0
+        },
+        {
+          "id": "S008",
+          "correct": 40,
+          "trials": 45,
+          "accuracy": 0.8888888888888888
+        },
+        {
+          "id": "S009",
+          "correct": 39,
+          "trials": 45,
+          "accuracy": 0.8666666666666667
+        },
+        {
+          "id": "S010",
+          "correct": 43,
+          "trials": 45,
+          "accuracy": 0.9555555555555556
+        },
+        {
+          "id": "S011",
+          "correct": 39,
+          "trials": 45,
+          "accuracy": 0.8666666666666667
+        },
+        {
+          "id": "S012",
+          "correct": 40,
+          "trials": 45,
+          "accuracy": 0.8888888888888888
+        },
+        {
+          "id": "S013",
+          "correct": 42,
+          "trials": 45,
+          "accuracy": 0.9333333333333333
+        },
+        {
+          "id": "S014",
+          "correct": 38,
+          "trials": 45,
+          "accuracy": 0.8444444444444444
+        },
+        {
+          "id": "S015",
+          "correct": 44,
+          "trials": 45,
+          "accuracy": 0.9777777777777777
+        },
+        {
+          "id": "S016",
+          "correct": 37,
+          "trials": 45,
+          "accuracy": 0.8222222222222222
+        },
+        {
+          "id": "S017",
+          "correct": 41,
+          "trials": 45,
+          "accuracy": 0.9111111111111111
+        },
+        {
+          "id": "S018",
+          "correct": 43,
+          "trials": 45,
+          "accuracy": 0.9555555555555556
+        },
+        {
+          "id": "S019",
+          "correct": 38,
+          "trials": 45,
+          "accuracy": 0.8444444444444444
+        },
+        {
+          "id": "S020",
+          "correct": 42,
+          "trials": 45,
+          "accuracy": 0.9333333333333333
+        },
+        {
+          "id": "S021",
+          "correct": 33,
+          "trials": 45,
+          "accuracy": 0.7333333333333333
+        },
+        {
+          "id": "S022",
+          "correct": 44,
+          "trials": 45,
+          "accuracy": 0.9777777777777777
+        },
+        {
+          "id": "S023",
+          "correct": 43,
+          "trials": 45,
+          "accuracy": 0.9555555555555556
+        },
+        {
+          "id": "S024",
+          "correct": 37,
+          "trials": 45,
+          "accuracy": 0.8222222222222222
+        },
+        {
+          "id": "S025",
+          "correct": 37,
+          "trials": 45,
+          "accuracy": 0.8222222222222222
+        },
+        {
+          "id": "S026",
+          "correct": 41,
+          "trials": 45,
+          "accuracy": 0.9111111111111111
+        },
+        {
+          "id": "S027",
+          "correct": 35,
+          "trials": 45,
+          "accuracy": 0.7777777777777778
+        },
+        {
+          "id": "S028",
+          "correct": 36,
+          "trials": 45,
+          "accuracy": 0.8
+        },
+        {
+          "id": "S029",
+          "correct": 44,
+          "trials": 45,
+          "accuracy": 0.9777777777777777
+        },
+        {
+          "id": "S030",
+          "correct": 41,
+          "trials": 45,
+          "accuracy": 0.9111111111111111
+        },
+        {
+          "id": "S031",
+          "correct": 41,
+          "trials": 45,
+          "accuracy": 0.9111111111111111
+        }
+      ]
+    }
+  },
+  "gain_percentage_points": -0.28673835125447855,
+  "validation_participants": 31,
+  "training_participants": 60,
+  "source_pool_participants": 91,
+  "source_pool_imagery_trials": 4095,
+  "source_pool_execution_trials": 4098,
+  "pretraining_epochs": 40,
+  "finetuning_epochs": 20,
+  "parameters": 4920,
+  "seed": [
+    41,
+    42,
+    43
+  ],
+  "temperature": 2,
+  "configurations_per_family": 3,
+  "epoch_grid": [
+    20,
+    40,
+    60
+  ],
+  "source_scores": {
+    "standard": {
+      "0": {
+        "20": {
+          "accuracy": 0.8867383512544803,
+          "correct": 1237,
+          "trials": 1395,
+          "participant_loss": 0.2727896571159363,
+          "folds": [
+            {
+              "accuracy": 0.8867383512544803,
+              "correct": 1237,
+              "trials": 1395,
+              "participant_loss": 0.2727896571159363
+            }
+          ]
+        },
+        "40": {
+          "accuracy": 0.8903225806451613,
+          "correct": 1242,
+          "trials": 1395,
+          "participant_loss": 0.26992014050483704,
+          "folds": [
+            {
+              "accuracy": 0.8903225806451613,
+              "correct": 1242,
+              "trials": 1395,
+              "participant_loss": 0.26992014050483704
+            }
+          ]
+        },
+        "60": {
+          "accuracy": 0.8853046594982079,
+          "correct": 1235,
+          "trials": 1395,
+          "participant_loss": 0.27444878220558167,
+          "folds": [
+            {
+              "accuracy": 0.8853046594982079,
+              "correct": 1235,
+              "trials": 1395,
+              "participant_loss": 0.27444878220558167
+            }
+          ]
+        }
+      },
+      "1": {
+        "20": {
+          "accuracy": 0.8896057347670251,
+          "correct": 1241,
+          "trials": 1395,
+          "participant_loss": 0.27084556221961975,
+          "folds": [
+            {
+              "accuracy": 0.8896057347670251,
+              "correct": 1241,
+              "trials": 1395,
+              "participant_loss": 0.27084556221961975
+            }
+          ]
+        },
+        "40": {
+          "accuracy": 0.8867383512544803,
+          "correct": 1237,
+          "trials": 1395,
+          "participant_loss": 0.2684095799922943,
+          "folds": [
+            {
+              "accuracy": 0.8867383512544803,
+              "correct": 1237,
+              "trials": 1395,
+              "participant_loss": 0.2684095799922943
+            }
+          ]
+        },
+        "60": {
+          "accuracy": 0.8853046594982079,
+          "correct": 1235,
+          "trials": 1395,
+          "participant_loss": 0.274250328540802,
+          "folds": [
+            {
+              "accuracy": 0.8853046594982079,
+              "correct": 1235,
+              "trials": 1395,
+              "participant_loss": 0.274250328540802
+            }
+          ]
+        }
+      },
+      "2": {
+        "20": {
+          "accuracy": 0.8924731182795699,
+          "correct": 1245,
+          "trials": 1395,
+          "participant_loss": 0.2693539559841156,
+          "folds": [
+            {
+              "accuracy": 0.8924731182795699,
+              "correct": 1245,
+              "trials": 1395,
+              "participant_loss": 0.2693539559841156
+            }
+          ]
+        },
+        "40": {
+          "accuracy": 0.8831541218637993,
+          "correct": 1232,
+          "trials": 1395,
+          "participant_loss": 0.2680709660053253,
+          "folds": [
+            {
+              "accuracy": 0.8831541218637993,
+              "correct": 1232,
+              "trials": 1395,
+              "participant_loss": 0.2680709660053253
+            }
+          ]
+        },
+        "60": {
+          "accuracy": 0.8867383512544803,
+          "correct": 1237,
+          "trials": 1395,
+          "participant_loss": 0.2745108902454376,
+          "folds": [
+            {
+              "accuracy": 0.8867383512544803,
+              "correct": 1237,
+              "trials": 1395,
+              "participant_loss": 0.2745108902454376
+            }
+          ]
+        }
+      }
+    },
+    "generic": {
+      "0": {
+        "20": {
+          "accuracy": 0.8910394265232975,
+          "correct": 1243,
+          "trials": 1395,
+          "participant_loss": 0.27265989780426025,
+          "folds": [
+            {
+              "accuracy": 0.8910394265232975,
+              "correct": 1243,
+              "trials": 1395,
+              "participant_loss": 0.27265989780426025
+            }
+          ]
+        },
+        "40": {
+          "accuracy": 0.8874551971326164,
+          "correct": 1238,
+          "trials": 1395,
+          "participant_loss": 0.2706107497215271,
+          "folds": [
+            {
+              "accuracy": 0.8874551971326164,
+              "correct": 1238,
+              "trials": 1395,
+              "participant_loss": 0.2706107497215271
+            }
+          ]
+        },
+        "60": {
+          "accuracy": 0.8817204301075269,
+          "correct": 1230,
+          "trials": 1395,
+          "participant_loss": 0.277485191822052,
+          "folds": [
+            {
+              "accuracy": 0.8817204301075269,
+              "correct": 1230,
+              "trials": 1395,
+              "participant_loss": 0.277485191822052
+            }
+          ]
+        }
+      },
+      "1": {
+        "20": {
+          "accuracy": 0.8924731182795699,
+          "correct": 1245,
+          "trials": 1395,
+          "participant_loss": 0.2694222629070282,
+          "folds": [
+            {
+              "accuracy": 0.8924731182795699,
+              "correct": 1245,
+              "trials": 1395,
+              "participant_loss": 0.2694222629070282
+            }
+          ]
+        },
+        "40": {
+          "accuracy": 0.8838709677419355,
+          "correct": 1233,
+          "trials": 1395,
+          "participant_loss": 0.2680518329143524,
+          "folds": [
+            {
+              "accuracy": 0.8838709677419355,
+              "correct": 1233,
+              "trials": 1395,
+              "participant_loss": 0.2680518329143524
+            }
+          ]
+        },
+        "60": {
+          "accuracy": 0.8867383512544803,
+          "correct": 1237,
+          "trials": 1395,
+          "participant_loss": 0.2743772566318512,
+          "folds": [
+            {
+              "accuracy": 0.8867383512544803,
+              "correct": 1237,
+              "trials": 1395,
+              "participant_loss": 0.2743772566318512
+            }
+          ]
+        }
+      },
+      "2": {
+        "20": {
+          "accuracy": 0.8924731182795699,
+          "correct": 1245,
+          "trials": 1395,
+          "participant_loss": 0.2683614492416382,
+          "folds": [
+            {
+              "accuracy": 0.8924731182795699,
+              "correct": 1245,
+              "trials": 1395,
+              "participant_loss": 0.2683614492416382
+            }
+          ]
+        },
+        "40": {
+          "accuracy": 0.8853046594982079,
+          "correct": 1235,
+          "trials": 1395,
+          "participant_loss": 0.26786723732948303,
+          "folds": [
+            {
+              "accuracy": 0.8853046594982079,
+              "correct": 1235,
+              "trials": 1395,
+              "participant_loss": 0.26786723732948303
+            }
+          ]
+        },
+        "60": {
+          "accuracy": 0.8867383512544803,
+          "correct": 1237,
+          "trials": 1395,
+          "participant_loss": 0.27351656556129456,
+          "folds": [
+            {
+              "accuracy": 0.8867383512544803,
+              "correct": 1237,
+              "trials": 1395,
+              "participant_loss": 0.27351656556129456
+            }
+          ]
+        }
+      }
+    },
+    "innovation": {
+      "0": {
+        "20": {
+          "accuracy": 0.8953405017921147,
+          "correct": 1249,
+          "trials": 1395,
+          "participant_loss": 0.27197402715682983,
+          "folds": [
+            {
+              "accuracy": 0.8953405017921147,
+              "correct": 1249,
+              "trials": 1395,
+              "participant_loss": 0.27197402715682983
+            }
+          ]
+        },
+        "40": {
+          "accuracy": 0.8867383512544803,
+          "correct": 1237,
+          "trials": 1395,
+          "participant_loss": 0.26968997716903687,
+          "folds": [
+            {
+              "accuracy": 0.8867383512544803,
+              "correct": 1237,
+              "trials": 1395,
+              "participant_loss": 0.26968997716903687
+            }
+          ]
+        },
+        "60": {
+          "accuracy": 0.8853046594982079,
+          "correct": 1235,
+          "trials": 1395,
+          "participant_loss": 0.2770552337169647,
+          "folds": [
+            {
+              "accuracy": 0.8853046594982079,
+              "correct": 1235,
+              "trials": 1395,
+              "participant_loss": 0.2770552337169647
+            }
+          ]
+        }
+      },
+      "1": {
+        "20": {
+          "accuracy": 0.8924731182795699,
+          "correct": 1245,
+          "trials": 1395,
+          "participant_loss": 0.2694046199321747,
+          "folds": [
+            {
+              "accuracy": 0.8924731182795699,
+              "correct": 1245,
+              "trials": 1395,
+              "participant_loss": 0.2694046199321747
+            }
+          ]
+        },
+        "40": {
+          "accuracy": 0.8831541218637993,
+          "correct": 1232,
+          "trials": 1395,
+          "participant_loss": 0.26809218525886536,
+          "folds": [
+            {
+              "accuracy": 0.8831541218637993,
+              "correct": 1232,
+              "trials": 1395,
+              "participant_loss": 0.26809218525886536
+            }
+          ]
+        },
+        "60": {
+          "accuracy": 0.8867383512544803,
+          "correct": 1237,
+          "trials": 1395,
+          "participant_loss": 0.27454954385757446,
+          "folds": [
+            {
+              "accuracy": 0.8867383512544803,
+              "correct": 1237,
+              "trials": 1395,
+              "participant_loss": 0.27454954385757446
+            }
+          ]
+        }
+      },
+      "2": {
+        "20": {
+          "accuracy": 0.8888888888888888,
+          "correct": 1240,
+          "trials": 1395,
+          "participant_loss": 0.26905548572540283,
+          "folds": [
+            {
+              "accuracy": 0.8888888888888888,
+              "correct": 1240,
+              "trials": 1395,
+              "participant_loss": 0.26905548572540283
+            }
+          ]
+        },
+        "40": {
+          "accuracy": 0.8810035842293907,
+          "correct": 1229,
+          "trials": 1395,
+          "participant_loss": 0.2683912217617035,
+          "folds": [
+            {
+              "accuracy": 0.8810035842293907,
+              "correct": 1229,
+              "trials": 1395,
+              "participant_loss": 0.2683912217617035
+            }
+          ]
+        },
+        "60": {
+          "accuracy": 0.886021505376344,
+          "correct": 1236,
+          "trials": 1395,
+          "participant_loss": 0.27377212047576904,
+          "folds": [
+            {
+              "accuracy": 0.886021505376344,
+              "correct": 1236,
+              "trials": 1395,
+              "participant_loss": 0.27377212047576904
+            }
+          ]
+        }
+      }
+    }
+  },
+  "full_cross_validation_completed": false,
+  "development_evaluation_performed": false,
+  "independent_final_test": false,
+  "labeled_calibration": false,
+  "source_protocol_sha256": "6a30bfc115040be2811c3f1d6559574a43270c9b0ffb056e321fdeca2306f9d9",
+  "source_selection_sha256": "185e86bad6be56b0516b3232a4368ad21b3bd66ac94a77e71ace7d00426665aa",
+  "requested_ensemble_seeds": [
+    41,
+    42,
+    43
+  ],
+  "reported_result_seeds": [
+    41,
+    42,
+    43
+  ],
+  "requested_ensemble_status": "Completed and exported",
+  "single_seed42_reference": {
+    "standard": {
+      "correct": 1245,
+      "trials": 1395,
+      "accuracy": 0.8924731182795699,
+      "participant_loss": 0.2693539559841156
+    },
+    "generic": {
+      "correct": 1245,
+      "trials": 1395,
+      "accuracy": 0.8924731182795699,
+      "participant_loss": 0.2683614492416382
+    },
+    "innovation": {
+      "correct": 1249,
+      "trials": 1395,
+      "accuracy": 0.8953405017921147,
+      "participant_loss": 0.27197402715682983
+    }
+  },
+  "source_scores_scope": "Historical source configuration selection with seed42, before requested ensemble aggregation."
+}

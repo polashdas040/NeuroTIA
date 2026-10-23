@@ -1,0 +1,11 @@
+{
+  "provider": "ollama",
+  "base_url": "http://127.0.0.1:11434",
+  "model": "qwen3:1.7b",
+  "temperature": 0,
+  "context_tokens": 4096,
+  "maximum_output_tokens": 768,
+  "thinking": false,
+  "keep_alive": 0,
+  "policy": "User-selected free local Ollama API. Actual schema-validated LLM calls are required; failures stop the workflow."
+}
