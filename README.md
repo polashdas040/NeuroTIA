@@ -1,13 +1,47 @@
-# NeuroTIA Transformer
+# NeuroTIA — EEG Motor Imagery Classification with a CNN–Transformer and Evidence-Aware AI
 
-**GitHub Pages dashboard (enable Pages below):** [NeuroTIA](https://polashdas040.github.io/NeuroTIA/) — no installation or local server required.
+**Research project | Brain–Computer Interfaces · Deep Learning · EEG Signal Processing · Explainable Evaluation**
 
-**Motor-imagery EEG classification with signed temporal-energy attention and a local LLM evidence workflow.**
+[View repository](https://github.com/polashdas040/NeuroTIA) · [Interactive results dashboard](https://polashdas040.github.io/NeuroTIA/) · [Dataset: PhysioNet EEGMMIDB](https://physionet.org/content/eegmmidb/1.0.0/)
 
-NeuroTIA uses a compact CNN–Transformer hybrid to classify imagined left-hand versus right-hand movement from 64-channel EEG. Its CNN feature encoder applies spatial–temporal and depthwise/pointwise convolutions to produce tokens for the Transformer classifier. The proposed attention adds a learned, signed bias based on adjacent-token energy. A separate LangGraph workflow retrieves local records, plans verification with a local LLM, runs numerical checks, and reports findings. The LLM does not classify EEG.
+## Project overview
+
+**NeuroTIA** investigates left- versus right-hand motor-imagery classification using a compact convolutional neural network (CNN) and Transformer on 64-channel electroencephalography (EEG) recordings. The architecture combines spatial–temporal feature extraction, depthwise and pointwise convolutions, and sequence attention. A proposed **signed temporal-energy attention bias** learns whether to emphasize or suppress tokens based on changes in adjacent-token latent energy.
+
+The repository also contains a separate **LangGraph + local Ollama LLM evidence-review workflow** that retrieves experiment records, plans numerical verification, checks evidence, and summarizes validated findings. **The LLM does not predict EEG classes** and is not credited with any classification improvement.
 
 ![NeuroTIA architecture](figures/neurotia_signed_key_architecture.svg)
 
+## Research highlights
+
+- **EEG / BCI task:** Binary classification of imagined left-hand and right-hand movement on the publicly available PhysioNet EEG Motor Movement/Imagery Dataset.
+- **Hybrid model:** A spatial–temporal CNN encoder and a compact Transformer classifier; each model contains **4,920 parameters**.
+- **Attention research:** Proposed signed temporal-energy key bias, evaluated against matched standard-attention and generic-energy controls.
+- **Experimental design:** Execution-movement pretraining followed by imagery fine-tuning, with training participants excluded from the evaluated source fold.
+- **Evaluation and diagnostics:** Accuracy, balanced accuracy, macro F1, ROC AUC, confusion matrix, precision–recall, reliability diagnostics, and per-participant summaries.
+- **Reproducibility:** Saved checkpoints, manifest/hash verification, preprocessing and offline inference scripts, results plotting, and an interactive static dashboard.
+- **Agentic AI component:** A local LLM-assisted evidence review, with deterministic Python checks serving as the authority for numerical claims.
+
+### Results at a glance
+
+| Evaluation | Proposed attention | Standard attention | Generic energy control |
+| --- | ---: | ---: | ---: |
+| Accuracy | **89.32%** | **89.61%** | **89.53%** |
+| ROC AUC | 0.9620 | 0.9624 | 0.9630 |
+| Macro F1 | 89.32% | 89.60% | 89.53% |
+
+**Scope:** These are three-seed ensemble results on **1,395 trials from 31 participants in one source-validation fold**. Model settings were previously selected on that same fold. This is **not an independent holdout evaluation or completed three-fold cross-validation**. The proposed attention **did not outperform** the matched standard attention in this ensemble comparison. No clinical-performance or scientific-novelty claim is made from these measurements.
+
+## CV-ready project summary
+
+> **NeuroTIA — CNN–Transformer Framework for EEG Motor-Imagery Classification**  
+> Research project in brain–computer interfaces and deep learning. The repository implements a compact 4,920-parameter CNN–Transformer for 64-channel EEG motor-imagery classification, investigates a signed temporal-energy attention mechanism, and compares it with standard-attention baselines. The proposed three-seed ensemble achieved **89.32% accuracy and 0.9620 ROC AUC** on a selected 31-participant, 1,395-trial validation fold. Additional components include preprocessing, checkpoint verification, per-participant evaluation, an interactive dashboard, and a local LLM-assisted evidence-review workflow.
+
+**Suggested CV keywords:** EEG · Brain–Computer Interface (BCI) · Motor Imagery · CNN–Transformer · Attention Mechanisms · PyTorch · Signal Processing · LangGraph · Local LLM · Model Evaluation
+
+**Attribution note:** The CV summary describes the repository's work and results, not any particular person's authorship. Before claiming this as your own research or implementation, accurately state your role and contributions and credit collaborators.
+
+---
 ## Results
 
 These are **source-validation results on one fold: 31 participants and 1,395 trials**, with the participants excluded from both execution pretraining and imagery fine-tuning. The current ensembles average seeds **41, 42 and 43**. Settings were selected previously on this same fold using seed42. This is **not independent testing or completed three-fold cross-validation**.
